@@ -5,5 +5,7 @@
   ],
   "dependencyDashboard": true,
   "osvVulnerabilityAlerts": true,
-  "dependencyDashboardOSVVulnerabilitySummary": "all"
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "requireConfig": "optional",
+  "onboarding": false
 }
