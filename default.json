@@ -1,16 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    ":dependencyDashboard",
-    ":dependencyDashboardApproval"
+    "config:recommended"
   ],
   "dependencyDashboard": true,
   "osvVulnerabilityAlerts": true,
-  "dependencyDashboardApproval": true,
-  "prConcurrentLimit": 5,
-  "autodiscover": true,
-  "autodiscoverFilter": [
-    "znsio/specmatic*"
-  ]
+  "dependencyDashboardOSVVulnerabilitySummary": "all"
 }
