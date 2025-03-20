@@ -6,5 +6,6 @@
       ":dependencyDashboard"
     ],
     "dependencyDashboard": true
-  }
+  },
+  "dependencyDashboard": true
 }
