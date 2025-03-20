@@ -1,5 +1,5 @@
 {
   "extends": [
-    "github>znsio/renovate-config"
+    "local>znsio/renovate-config"
   ]
 }
