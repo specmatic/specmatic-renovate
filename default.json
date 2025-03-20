@@ -8,5 +8,9 @@
   "dependencyDashboard": true,
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardApproval": true,
-  "prConcurrentLimit": 5
+  "prConcurrentLimit": 5,
+  "autodiscover": true,
+  "autodiscoverFilter": [
+    "znsio/specmatic*"
+  ]
 }
