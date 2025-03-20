@@ -1,11 +1,7 @@
 {
-  "config": {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-      "config:recommended",
-      ":dependencyDashboard"
-    ],
-    "dependencyDashboard": true
-  },
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
   "dependencyDashboard": true
 }
