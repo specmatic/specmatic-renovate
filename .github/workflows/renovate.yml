@@ -19,11 +19,19 @@ jobs:
           node-version: 'lts/*'
           cache: 'npm'
 
+      - name: Cache Renovate Cache
+        uses: actions/cache@v3
+        with:
+          path: .renovate-cache
+          key: ${{ runner.os }}-renovate-${{ hashFiles('**/renovate.js') }}
+          restore-keys: |
+            ${{ runner.os }}-renovate-
+
       - name: Install Renovate CLI
         run: npm install -g renovate
 
       - name: Run Renovate
-        run: renovate
+        run: renovate --base-dir=.renovate-cache
         env:
           GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
           RENOVATE_CONFIG_FILE: ./renovate.js
