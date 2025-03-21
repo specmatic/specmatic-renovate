@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Run Renovate
-        run: renovate --base-dir=.renovate-cache
+        run: npm exec renovate --base-dir=.renovate-cache
         env:
           SPECMATIC_GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
           SPECMATIC_GITHUB_USER: ${{ secrets.SPECMATIC_GITHUB_USER }}
