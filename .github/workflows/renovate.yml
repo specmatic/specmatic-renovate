@@ -27,3 +27,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
           RENOVATE_CONFIG_FILE: ./renovate.js
+          LOG_LEVEL: debug

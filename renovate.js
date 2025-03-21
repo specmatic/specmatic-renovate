@@ -9,6 +9,7 @@ module.exports = {
   requireConfig: "optional",
   onboarding: false,
   autodiscover: true,
+  cachePrivatePackages: true,
   autodiscoverFilter: [
     "znsio/specmatic-arazzo",
     "znsio/specmatic-async",
