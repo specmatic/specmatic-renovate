@@ -2,7 +2,7 @@ module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["config:recommended", "mergeConfidence:all-badges"],
   token: process.env.GITHUB_TOKEN,
-  platform: "github",
+  // platform: "github",
   dependencyDashboard: true,
   osvVulnerabilityAlerts: true,
   dependencyDashboardOSVVulnerabilitySummary: "all",
