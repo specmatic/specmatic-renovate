@@ -37,12 +37,9 @@ module.exports = {
       automerge: true,
     },
     {
-      matchPackageNames: [
-        "org.assertj:*",
-        "org.junit:*"
-      ],
+      matchPackageNames: ["org.assertj:*", "org.junit:*"],
       automerge: true,
-    }
+    },
   ],
   vulnerabilityAlerts: {
     dependencyDashboardApproval: false,
