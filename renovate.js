@@ -24,6 +24,7 @@ module.exports = {
     "znsio/specmatic-node",
     "znsio/specmatic-openapi",
     "znsio/specmatic-redis",
+    "znsio/specmatic-renovate",
     "znsio/specmatic"
   ],
   repositoryCache: "enabled",
