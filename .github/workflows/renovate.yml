@@ -22,6 +22,14 @@ jobs:
       - name: Install npm packages
         run: npm install
 
+      - name: Cache renovate cache
+        uses: actions/cache@v4
+        with:
+          path: .renovate-cache
+          key: ${{ runner.os }}-renovate-${{ hashFiles('**/renovate.js') }}
+          restore-keys: |
+            ${{ runner.os }}-renovate-
+
       - name: Run Renovate
         run: npm exec renovate --base-dir=.renovate-cache
         env:
