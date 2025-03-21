@@ -1,7 +1,11 @@
 /** @type {import("renovate/dist/config/types").AllConfig} */
 module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["config:recommended", "mergeConfidence:all-badges"],
+  extends: [
+    "config:recommended",
+    "mergeConfidence:all-badges",
+    "group:monorepos",
+  ],
   token: process.env.SPECMATIC_GITHUB_TOKEN,
   platform: "github",
   dependencyDashboard: true,
@@ -26,7 +30,7 @@ module.exports = {
     "znsio/specmatic-openapi",
     "znsio/specmatic-redis",
     "znsio/specmatic-renovate",
-    "znsio/specmatic"
+    "znsio/specmatic",
   ],
   repositoryCache: "enabled",
   prFooter:
@@ -56,5 +60,4 @@ module.exports = {
       password: process.env.SPECMATIC_GITHUB_TOKEN,
     },
   ],
-
 };
