@@ -1,16 +1,17 @@
+
 module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["config:recommended", "mergeConfidence:all-badges"],
   token: process.env.GITHUB_TOKEN,
-  // platform: "github",
+  platform: "github",
   dependencyDashboard: true,
   osvVulnerabilityAlerts: true,
   dependencyDashboardOSVVulnerabilitySummary: "all",
   requireConfig: "optional",
   onboarding: false,
-  autodiscover: true,
+  autodiscover: false,
   cachePrivatePackages: true,
-  autodiscoverFilter: [
+  repositories: [
     "znsio/specmatic-arazzo",
     "znsio/specmatic-async",
     "znsio/specmatic-google-pubsub",
@@ -51,4 +52,5 @@ module.exports = {
       password: process.env.GITHUB_TOKEN,
     },
   ],
+
 };
