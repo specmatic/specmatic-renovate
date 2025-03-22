@@ -52,7 +52,7 @@ module.exports = {
       matchUpdateTypes: [
         "minor",
         "patch"
-      ]
+      ],
       automerge: true,
     },
   ],
