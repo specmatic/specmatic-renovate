@@ -5,7 +5,9 @@ module.exports = {
     "config:recommended",
     "mergeConfidence:all-badges",
     "group:monorepos",
+    "group:recommended",
   ],
+  addLabels: ["renovate", "dependency"],
   token: process.env.SPECMATIC_GITHUB_TOKEN,
   platform: "github",
   dependencyDashboard: true,
@@ -44,7 +46,11 @@ module.exports = {
       automerge: true,
     },
     {
-      matchPackageNames: ["org.assertj:*", "org.junit.jupiter:*", "org.junit.platform:*"],
+      matchPackageNames: [
+        "org.assertj:*",
+        "org.junit.jupiter:*",
+        "org.junit.platform:*",
+      ],
       automerge: true,
     },
   ],
@@ -62,5 +68,5 @@ module.exports = {
       username: "specmatic-builder",
       password: process.env.SPECMATIC_GITHUB_TOKEN,
     },
-  ],
+  ]
 };
