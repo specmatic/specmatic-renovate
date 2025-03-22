@@ -18,8 +18,8 @@ module.exports = {
   onboarding: false,
   autodiscover: false,
   cachePrivatePackages: true,
-  gitIgnoredAuthors: ["renovate@whitesourcesoftware.com"],
-  gitAuthor: "Specmatic Renovate <no-reply@specmatic.io>",
+  gitIgnoredAuthors: ["renovate@whitesourcesoftware.com", "no-reply@specmatic.io"],
+  gitAuthor: "Specmatic Renovate <github-service-account@specmatic.io>",
   ignorePrAuthor: true,
   repositories: [
     "znsio/specmatic-arazzo",
