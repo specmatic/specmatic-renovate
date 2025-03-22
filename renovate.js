@@ -44,7 +44,7 @@ module.exports = {
       automerge: true,
     },
     {
-      matchPackageNames: ["org.assertj:*", "org.junit:*"],
+      matchPackageNames: ["org.assertj:*", "org.junit.jupiter:*"],
       automerge: true,
     },
   ],
