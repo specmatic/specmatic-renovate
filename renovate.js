@@ -50,6 +50,7 @@ module.exports = {
         "org.assertj:*",
         "org.junit.jupiter:*",
         "org.junit.platform:*",
+        "io.mockk:*",
       ],
       automerge: true,
     },
