@@ -11,7 +11,6 @@ module.exports = {
   token: process.env.SPECMATIC_GITHUB_TOKEN,
   platform: "github",
   dependencyDashboard: true,
-  dependencyDashboardApproval: true,
   osvVulnerabilityAlerts: true,
   dependencyDashboardOSVVulnerabilitySummary: "all",
   requireConfig: "optional",
@@ -53,6 +52,8 @@ module.exports = {
         "io.mockk:*",
         "io.specmatic.gradle:*",
         "io.specmatic.license:*",
+        "org.jetbrains.kotlin:{/,}**",
+        "org.jetbrains.kotlin.{/,}**",
       ],
       matchUpdateTypes: [
         "minor",
@@ -62,12 +63,10 @@ module.exports = {
     },
   ],
   vulnerabilityAlerts: {
-    dependencyDashboardApproval: false,
     commitMessagePrefix: "[SECURITY] ",
     commitMessageSuffix: "",
     vulnerabilityFixStrategy: "lowest",
   },
-  prHourlyLimit: 5,
   hostRules: [
     {
       hostType: "maven",
