@@ -54,6 +54,7 @@ module.exports = {
         "io.specmatic.license:*",
         "org.jetbrains.kotlin:{/,}**",
         "org.jetbrains.kotlin.{/,}**",
+        "renovate"
       ],
       matchUpdateTypes: [
         "minor",
