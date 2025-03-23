@@ -15,12 +15,12 @@ module.exports = {
   dependencyDashboardOSVVulnerabilitySummary: "all",
   requireConfig: "optional",
   onboarding: false,
-  autodiscover: false,
   cachePrivatePackages: true,
   gitIgnoredAuthors: ["renovate@whitesourcesoftware.com", "no-reply@specmatic.io"],
   gitAuthor: "Specmatic Renovate <github-service-account@specmatic.io>",
   ignorePrAuthor: true,
-  repositories: [
+  autodiscover: true,
+  autodiscoverFilter: [
     "znsio/specmatic-arazzo",
     "znsio/specmatic-async",
     "znsio/specmatic-google-pubsub",
