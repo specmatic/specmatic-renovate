@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+TMPFILE=$(mktemp)
+trap 'rm -f "$TMPFILE"' EXIT
+npm exec renovate -- --write-discovered-repos="${TMPFILE}"
+
+jq -r '.[]' < "${TMPFILE}" | xargs -P 5 -I {} bash -c "$@"
