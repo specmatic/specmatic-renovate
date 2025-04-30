@@ -21,6 +21,7 @@ module.exports = {
   ignorePrAuthor: true,
   autodiscover: true,
   autodiscoverFilter: [
+    "znsio/docs.specmatic.io",
     "znsio/specmatic-arazzo",
     "znsio/specmatic-async",
     "znsio/specmatic-google-pubsub",
@@ -35,6 +36,7 @@ module.exports = {
     "znsio/specmatic-openapi",
     "znsio/specmatic-redis",
     "znsio/specmatic-renovate",
+    "znsio/specmatic.io",
     "znsio/specmatic",
   ],
   repositoryCache: "enabled",
