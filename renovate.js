@@ -21,23 +21,7 @@ module.exports = {
   ignorePrAuthor: true,
   autodiscover: true,
   autodiscoverFilter: [
-    "znsio/docs.specmatic.io",
-    "znsio/specmatic-arazzo",
-    "znsio/specmatic-async",
-    "znsio/specmatic-google-pubsub",
-    "znsio/specmatic-gradle-plugin",
-    "znsio/specmatic-graphql",
-    "znsio/specmatic-grpc",
-    "znsio/specmatic-jdbc",
-    "znsio/specmatic-jms",
-    "znsio/specmatic-kafka",
-    "znsio/specmatic-license",
-    "znsio/specmatic-node",
-    "znsio/specmatic-openapi",
-    "znsio/specmatic-redis",
-    "znsio/specmatic-renovate",
-    "znsio/specmatic.io",
-    "znsio/specmatic",
+    "specmatic/*",
   ],
   repositoryCache: "enabled",
   rebaseWhen: "conflicted",
@@ -64,7 +48,7 @@ module.exports = {
         "patch"
       ],
       //automerge: true,
-    },
+    }
   ],
   vulnerabilityAlerts: {
     commitMessagePrefix: "[SECURITY] ",
