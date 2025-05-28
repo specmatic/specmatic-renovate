@@ -34,7 +34,7 @@ jobs:
         run: ./run-in-parallel
         env:
           SPECMATIC_GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
-          SPECMATIC_GITHUB_USER: ${{ secrets.SPECMATIC_GITHUB_USER }}
+          SPECMATIC_GITHUB_USER: ${{ vars.SPECMATIC_GITHUB_USER }}
           RENOVATE_CONFIG_FILE: ./renovate.js
           RENOVATE_CACHE_DIR: .renovate-cache
           LOG_LEVEL: debug
