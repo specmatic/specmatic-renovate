@@ -3,4 +3,18 @@ TMPFILE=$(mktemp)
 trap 'rm -f "$TMPFILE"' EXIT
 npm exec renovate -- --write-discovered-repos="${TMPFILE}"
 
-jq -r '.[]' < "${TMPFILE}" | xargs -P 5 -I {} bash -c "$@"
+# Filter out repos that are forks using GitHub API
+
+filter_non_forks() {
+  while read -r repo; do
+    parent=$(curl -s -H "Authorization: token $SPECMATIC_GITHUB_TOKEN" \
+      "https://api.github.com/repos/$repo" | jq -r '.parent.owner.login')
+    if [[ -z "$parent" || "$parent" == "null" ]]; then
+      echo "$repo"
+    else
+      echo "Skipping fork: $repo"
+    fi
+  done
+}
+
+jq -r '.[]' < "$TMPFILE" | filter_non_forks | xargs -P 5 -I {} bash -c "$@"
