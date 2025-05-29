@@ -6,6 +6,8 @@ module.exports = {
     "mergeConfidence:all-badges",
     "group:monorepos",
     "group:recommended",
+    ":semanticCommitTypeAll(chore)",
+    ":semanticCommitScope(deps)",
   ],
   addLabels: ["renovate", "dependency"],
   token: process.env.SPECMATIC_GITHUB_TOKEN,
@@ -36,19 +38,16 @@ module.exports = {
         "org.assertj:*",
         "org.junit.jupiter:*",
         "org.junit.platform:*",
-        "io.mockk:*",
         "io.specmatic.gradle:*",
         "io.specmatic.license:*",
-        "org.jetbrains.kotlin:{/,}**",
-        "org.jetbrains.kotlin.{/,}**",
         "renovate"
       ],
       matchUpdateTypes: [
         "minor",
         "patch"
       ],
-      //automerge: true,
-    }
+      // automerge: true,
+    },
   ],
   vulnerabilityAlerts: {
     commitMessagePrefix: "[SECURITY] ",
