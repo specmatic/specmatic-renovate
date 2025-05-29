@@ -46,7 +46,7 @@ module.exports = {
         "minor",
         "patch"
       ],
-      // automerge: true,
+      automerge: true,
     },
   ],
   vulnerabilityAlerts: {
