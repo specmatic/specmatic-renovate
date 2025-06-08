@@ -57,9 +57,9 @@ module.exports = {
   hostRules: [
     {
       hostType: "maven",
-      matchHost: "maven.pkg.github.com",
-      username: "specmatic-builder",
-      password: process.env.SPECMATIC_GITHUB_TOKEN,
+      matchHost: "repo.specmatic.io",
+      username: process.env.SPECMATIC_REPOSILITE_USERNAME,
+      password: process.env.SPECMATIC_REPOSILITE_TOKEN,
     },
   ]
 };
