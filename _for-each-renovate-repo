@@ -17,4 +17,4 @@ filter_non_forks() {
   done
 }
 
-jq -r '.[]' < "$TMPFILE" | filter_non_forks | xargs -P 5 -I {} bash -c "$@"
+jq -r '.[]' < "$TMPFILE" | grep -v specmatic.io | filter_non_forks | xargs -P 5 -I {} bash -c "$@"
