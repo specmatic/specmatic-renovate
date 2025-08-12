@@ -61,5 +61,21 @@ module.exports = {
       username: process.env.SPECMATIC_REPOSILITE_USERNAME,
       password: process.env.SPECMATIC_REPOSILITE_TOKEN,
     },
+  ],
+  "packageGroups": [
+    {
+      groupName: "apache-curator",
+      description: "Group updates for Apache Curator dependencies",
+      matchPackageNames: [
+        "org.apache.curator:**",
+      ]
+    },
+    {
+      groupName: "apache-kafka",
+      description: "Group updates for Apache Kafka dependencies",
+      matchPackageNames: [
+        "org.apache.kafka:**",
+      ]
+    }
   ]
 };
