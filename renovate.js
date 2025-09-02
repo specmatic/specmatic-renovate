@@ -71,6 +71,13 @@ module.exports = {
       ]
     },
     {
+      groupName: "opensaml",
+      description: "Group updates for OpenSAML",
+      matchPackageNames: [
+        "org.opensaml:**",
+      ]
+    },
+    {
       groupName: "apache-kafka",
       description: "Group updates for Apache Kafka dependencies",
       matchPackageNames: [
