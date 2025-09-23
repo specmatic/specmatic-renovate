@@ -83,6 +83,14 @@ module.exports = {
       matchPackageNames: [
         "org.apache.kafka:**",
       ]
+    },
+    {
+      groupName: "jackson",
+      description: "Group updates for Jackson dependencies",
+      matchPackageNames: [
+        "com.fasterxml.jackson.datatype:**",
+        "com.fasterxml.jackson.dataformat:**",
+      ]
     }
   ]
 };
