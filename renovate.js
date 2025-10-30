@@ -39,8 +39,10 @@ module.exports = {
         "org.junit.jupiter:*",
         "org.junit.platform:*",
         "io.specmatic.gradle:*",
+        "io.specmatic.gradle",
         "io.specmatic.license:*",
-        "renovate"
+        "renovate",
+        "com.squareup.okhttp3:mockwebserver"
       ],
       matchUpdateTypes: [
         "minor",
