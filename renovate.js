@@ -41,6 +41,7 @@ module.exports = {
         "io.specmatic.gradle:*",
         "io.specmatic.gradle",
         "io.specmatic.license:*",
+        "io.specmatic.*:*",
         "renovate",
         "com.squareup.okhttp3:mockwebserver"
       ],
@@ -92,6 +93,7 @@ module.exports = {
       matchPackageNames: [
         "com.fasterxml.jackson.datatype:**",
         "com.fasterxml.jackson.dataformat:**",
+        "com.fasterxml.jackson.core:**",
       ]
     }
   ]
