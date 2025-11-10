@@ -46,7 +46,9 @@ module.exports = {
         "com.fasterxml.jackson.*:*",
         "tools.jackson.*:*",
         "renovate",
-        "com.squareup.okhttp3:mockwebserver"
+        "com.squareup.okhttp3:mockwebserver",
+        "commons-io:commons-io",
+        "org.apache.commons:*"
       ],
       matchUpdateTypes: [
         "minor",
