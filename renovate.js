@@ -47,6 +47,8 @@ module.exports = {
         "tools.jackson.*:*",
         "renovate",
         "com.squareup.okhttp3:mockwebserver",
+        "com.squareup.okio:*",
+        "com.squareup.okhttp3:*",
         "commons-io:commons-io",
         "org.apache.commons:*"
       ],
