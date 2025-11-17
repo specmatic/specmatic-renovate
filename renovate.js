@@ -38,6 +38,7 @@ module.exports = {
         "org.assertj:*",
         "org.junit.jupiter:*",
         "org.junit.platform:*",
+        "io.specmatic:*",
         "io.specmatic.*:*",
         "org.springframework.*:*",
         "jakarta.validation:*",
