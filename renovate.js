@@ -103,6 +103,13 @@ module.exports = {
         "com.fasterxml.jackson.dataformat:**",
         "com.fasterxml.jackson.core:**",
       ]
+    },
+    {
+      groupName: "bouncycastle",
+      description: "Group updates for bouncycastle",
+      matchPackageNames: [
+        "org.bouncycastle:**"
+      ]
     }
   ]
 };
