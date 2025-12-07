@@ -73,7 +73,7 @@ module.exports = {
       password: process.env.SPECMATIC_REPOSILITE_TOKEN,
     },
   ],
-  "packageGroups": [
+  packageRules: [
     {
       groupName: "apache-curator",
       description: "Group updates for Apache Curator dependencies",

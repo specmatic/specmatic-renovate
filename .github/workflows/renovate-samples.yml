@@ -1,0 +1,44 @@
+name: Run Renovate Bot - Samples
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # run every day on the fourth hour
+  workflow_dispatch:
+
+jobs:
+  renovate-samples:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+
+      - name: Install npm packages
+        run: npm install
+
+      - name: Cache renovate cache
+        uses: actions/cache@v4
+        with:
+          path: .renovate-cache
+          key: ${{ runner.os }}-renovate-samples-${{ hashFiles('**/renovate.js') }}
+          restore-keys: |
+            ${{ runner.os }}-renovate-samples-
+
+      - name: Run Renovate
+        run: ./run-in-parallel
+        env:
+          SPECMATIC_GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
+          SPECMATIC_REPOSILITE_USERNAME: ${{ secrets.SPECMATIC_REPOSILITE_USERNAME }}
+          SPECMATIC_REPOSILITE_TOKEN: ${{ secrets.SPECMATIC_REPOSILITE_TOKEN }}
+          SPECMATIC_GITHUB_USER: ${{ vars.SPECMATIC_GITHUB_USER }}
+          RENOVATE_CONFIG_FILE: ./renovate.js
+          RENOVATE_CACHE_DIR: .renovate-cache-samples
+          LOG_LEVEL: debug
+          RENOVATE_AUTODISCOVER_FILTER: '/(-order-|-sample|-demo)/i'
+          RENOVATE_ADDITIONAL_CONFIG_FILE: ./renovate.samples.js
