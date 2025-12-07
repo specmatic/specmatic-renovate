@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-TMPFILE=$(mktemp)
-trap 'rm -f "$TMPFILE"' EXIT
-npm exec renovate -- --write-discovered-repos="${TMPFILE}"
 
-# Filter out repos that are forks using GitHub API
+TMPFILE=repos.json
+
+npm exec renovate -- --write-discovered-repos="${TMPFILE}"
 
 filter_non_forks() {
   while read -r repo; do
@@ -17,4 +16,4 @@ filter_non_forks() {
   done
 }
 
-jq -r '.[]' < "$TMPFILE" | grep -v specmatic.io | filter_non_forks | xargs -P 5 -I {} bash -c "$@"
+jq -r '.[]' < "$TMPFILE" | grep -vE '(specmatic\.io)|(iata)'| filter_non_forks | xargs -P 5 -I {} bash -c "$@"
