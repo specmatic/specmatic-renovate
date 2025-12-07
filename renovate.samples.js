@@ -3,6 +3,7 @@ module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   rebaseWhen: "behind-base-branch",
   prHourlyLimit: 2,
+  prConcurrentLimit: 2,
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
