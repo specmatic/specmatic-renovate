@@ -8,8 +8,8 @@ module.exports = {
     "!specmatic/*iata*",
     "!specmatic/hooks-demo",
   ],
-  prHourlyLimit: 2,
-  prConcurrentLimit: 2,
+  prHourlyLimit: 1,
+  prConcurrentLimit: 1,
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
