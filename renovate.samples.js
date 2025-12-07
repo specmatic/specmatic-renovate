@@ -5,7 +5,8 @@ module.exports = {
   autodiscoverFilter: [
     "specmatic/*{-order-,-sample,-demo}*",
     "!specmatic/arazzo-paris-demo",
-    '!specmatic/*iata*'
+    "!specmatic/*iata*",
+    "!specmatic/hooks-demo",
   ],
   prHourlyLimit: 2,
   prConcurrentLimit: 2,
