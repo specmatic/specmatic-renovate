@@ -16,4 +16,4 @@ filter_non_forks() {
   done
 }
 
-jq -r '.[]' < "$TMPFILE" | grep -vE '(specmatic\.io)|(iata)'| filter_non_forks | xargs -P 5 -I {} bash -c "$@"
+jq -r '.[]' < "$TMPFILE" | grep -vE '(specmatic\.io)|(iata)|(^znsio/)'| filter_non_forks | xargs -P 5 -I {} bash -c "$@"
