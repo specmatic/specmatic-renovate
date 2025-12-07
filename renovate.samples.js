@@ -1,7 +1,7 @@
 /** @type {import("renovate/dist/config/types").AllConfig} */
 module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  rebaseWhen: "behind-base-branch",
+  // rebaseWhen: "behind-base-branch",
   autodiscoverFilter: [
     "specmatic/*{-order-,-sample,-demo}*",
     "!specmatic/arazzo-paris-demo",
