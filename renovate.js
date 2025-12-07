@@ -22,9 +22,6 @@ module.exports = {
   gitAuthor: "Specmatic Renovate <github-service-account@specmatic.io>",
   ignorePrAuthor: true,
   autodiscover: true,
-  autodiscoverFilter: [
-    "specmatic/*",
-  ],
   repositoryCache: "enabled",
   rebaseWhen: "conflicted",
   prFooter:

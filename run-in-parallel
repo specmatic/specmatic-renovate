@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-"$(dirname "$0")/_for-each-renovate-repo" 'RENOVATE_AUTODISCOVER=false RENOVATE_REPOSITORIES={} FORCE_COLOR=3 npm exec renovate 2>&1 | sed "s!^![{}] !"'

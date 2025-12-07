@@ -26,14 +26,15 @@ jobs:
       - name: Cache renovate cache
         uses: actions/cache@v4
         with:
-          path: .renovate-cache
-          key: ${{ runner.os }}-renovate-main-${{ hashFiles('**/renovate.js') }}
+          path: .renovate-cache-main
+          key: ${{ runner.os }}-renovate-main-
           restore-keys: |
             ${{ runner.os }}-renovate-main-
 
       - name: Run Renovate
-        run: ./run-in-parallel
+        run: npm exec renovate
         env:
+          FORCE_COLOR: 3
           SPECMATIC_GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
           SPECMATIC_REPOSILITE_USERNAME: ${{ secrets.SPECMATIC_REPOSILITE_USERNAME }}
           SPECMATIC_REPOSILITE_TOKEN: ${{ secrets.SPECMATIC_REPOSILITE_TOKEN }}
@@ -41,4 +42,4 @@ jobs:
           RENOVATE_CONFIG_FILE: ./renovate.js
           RENOVATE_CACHE_DIR: .renovate-cache-main
           LOG_LEVEL: debug
-          RENOVATE_AUTODISCOVER_FILTER: '!/(-order-|-sample|-demo)/i'
+          RENOVATE_ADDITIONAL_CONFIG_FILE: ./renovate.main.js

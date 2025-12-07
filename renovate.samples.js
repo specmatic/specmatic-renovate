@@ -2,6 +2,11 @@
 module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   rebaseWhen: "behind-base-branch",
+  autodiscoverFilter: [
+    "specmatic/*{-order-,-sample,-demo}*",
+    "!specmatic/arazzo-paris-demo",
+    '!specmatic/*iata*'
+  ],
   prHourlyLimit: 2,
   prConcurrentLimit: 2,
   lockFileMaintenance: {
