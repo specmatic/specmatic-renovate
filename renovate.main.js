@@ -3,10 +3,10 @@ module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   autodiscoverFilter: [
     "specmatic/*",
-
     "!specmatic/*{-order-,-sample,-demo}*",
     "!specmatic/arazzo-paris-demo",
     "!specmatic/*iata*",
-    '!specmatic/tools.openapis.org'
+    "!specmatic/tools.openapis.org",
+    "!specmatic/specmatic.io",
   ],
 };
