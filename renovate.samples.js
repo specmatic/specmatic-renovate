@@ -9,7 +9,6 @@ module.exports = {
   ],
   prHourlyLimit: 2,
   prConcurrentLimit: 2,
-  prCommitsPerRunLimit: 5,
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
