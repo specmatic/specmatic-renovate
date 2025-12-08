@@ -7,6 +7,7 @@ module.exports = {
     "!specmatic/arazzo-paris-demo",
     "!specmatic/*iata*",
     "!specmatic/hooks-demo",
+    "!specmatic/specmatic-arazzo-ui-sample",
   ],
   prHourlyLimit: 1,
   prConcurrentLimit: 1,
