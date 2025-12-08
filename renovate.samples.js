@@ -8,6 +8,7 @@ module.exports = {
     "!specmatic/*iata*",
     "!specmatic/hooks-demo",
     "!specmatic/specmatic-arazzo-ui-sample",
+    "!specmatic/order-service-avro",
   ],
   prHourlyLimit: 1,
   prConcurrentLimit: 1,
