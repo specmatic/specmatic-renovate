@@ -24,5 +24,11 @@ module.exports = {
       automerge: true,
       automergeType: "pr",
     },
+    {
+      matchManagers: ["github-actions"],
+      matchUpdateTypes: ["major", "minor", "patch"],
+      automerge: true,
+      automergeType: "pr",
+    },
   ],
 };
