@@ -46,5 +46,5 @@ jobs:
           SPECMATIC_GITHUB_USER: ${{ vars.SPECMATIC_GITHUB_USER }}
           RENOVATE_CONFIG_FILE: ./renovate.js
           RENOVATE_CACHE_DIR: .renovate-cache-samples
-          LOG_LEVEL: info
+          LOG_LEVEL: debug
           RENOVATE_ADDITIONAL_CONFIG_FILE: ./renovate.samples.js
