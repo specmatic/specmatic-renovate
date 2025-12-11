@@ -9,4 +9,33 @@ module.exports = {
     "!specmatic/tools.openapis.org",
     "!specmatic/specmatic.io",
   ],
+  packageRules: [
+    {
+      matchPackageNames: [
+        "gradle",
+        "org.assertj:*",
+        "org.junit.jupiter:*",
+        "org.junit.platform:*",
+        "io.specmatic:*",
+        "io.specmatic.*:*",
+        "org.springframework.*:*",
+        "jakarta.validation:*",
+        "org.springdoc:*",
+        "org.testcontainers:*",
+        "com.fasterxml.jackson.*:*",
+        "tools.jackson.*:*",
+        "renovate",
+        "com.squareup.okhttp3:*",
+        "net.javacrumbs.json-unit:json-unit-assertj",
+        "com.squareup.okio:*",
+        "commons-io:commons-io",
+        "org.apache.commons:*"
+      ],
+      matchUpdateTypes: [
+        "minor",
+        "patch"
+      ],
+      automerge: true,
+    },
+  ],
 };

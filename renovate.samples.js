@@ -10,25 +10,25 @@ module.exports = {
     "!specmatic/specmatic-arazzo-ui-sample",
     "!specmatic/order-service-avro",
   ],
+  // throttle creation of new PRs
   prHourlyLimit: 1,
+  // maximum number of open PRs at a time
   prConcurrentLimit: 1,
+  prCommitsPerRunLimit: 10,
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
-    automergeType: "pr",
   },
   packageRules: [
     {
       matchUpdateTypes: ["minor", "patch"],
       matchCurrentVersion: "!/^0/",
       automerge: true,
-      automergeType: "pr",
     },
     {
       matchManagers: ["github-actions"],
       matchUpdateTypes: ["major", "minor", "patch"],
       automerge: true,
-      automergeType: "pr",
     },
   ],
 };
