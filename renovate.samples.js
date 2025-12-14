@@ -22,7 +22,6 @@ module.exports = {
   packageRules: [
     {
       matchUpdateTypes: ["minor", "patch"],
-      matchCurrentVersion: "!/^0/",
       automerge: true,
     },
     {
