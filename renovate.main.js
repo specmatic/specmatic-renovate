@@ -4,6 +4,7 @@ module.exports = {
   autodiscoverFilter: [
     "specmatic/*",
     "!specmatic/*{-order-,-sample,-demo}*",
+    "!specmatic/aws-lambda-kafka-with-localstack",
     "!specmatic/arazzo-paris-demo",
     "!specmatic/*iata*",
     "!specmatic/tools.openapis.org",
