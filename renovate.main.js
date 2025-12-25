@@ -11,7 +11,7 @@ module.exports = {
     "!specmatic/specmatic.io",
   ],
   prHourlyLimit: 1,
-  prConcurrentLimit: 5,
+  prConcurrentLimit: 20,
   lockFileMaintenance: {
     enabled: true,
     automerge: true,

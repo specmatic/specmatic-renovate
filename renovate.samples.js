@@ -13,7 +13,7 @@ module.exports = {
   // throttle creation of new PRs
   prHourlyLimit: 1,
   // maximum number of open PRs at a time
-  prConcurrentLimit: 1,
+  prConcurrentLimit: 10,
   prCommitsPerRunLimit: 10,
   lockFileMaintenance: {
     enabled: true,
