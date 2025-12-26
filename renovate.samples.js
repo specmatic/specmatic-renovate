@@ -14,7 +14,6 @@ module.exports = {
   prHourlyLimit: 3,
   // maximum number of open PRs at a time
   prConcurrentLimit: 0,
-  prCommitsPerRunLimit: 10,
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
