@@ -76,6 +76,11 @@ module.exports = {
       matchPackageNames: [
         "org.bouncycastle:**"
       ]
-    }
+    },
+    {
+      matchManagers: ["github-actions"],
+      matchUpdateTypes: ["major", "minor", "patch"],
+      automerge: true,
+    },
   ]
 };

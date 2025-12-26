@@ -24,11 +24,6 @@ module.exports = {
     {
       matchUpdateTypes: ["minor", "patch", "lockFileMaintenance"],
       automerge: true,
-    },
-    {
-      matchManagers: ["github-actions"],
-      matchUpdateTypes: ["major", "minor", "patch"],
-      automerge: true,
-    },
+    }
   ],
 };
