@@ -10,8 +10,8 @@ module.exports = {
     "!specmatic/tools.openapis.org",
     "!specmatic/specmatic.io",
   ],
-  prHourlyLimit: 1,
-  prConcurrentLimit: 20,
+  prHourlyLimit: 2,
+  prConcurrentLimit: 0,
   lockFileMaintenance: {
     enabled: true,
     automerge: true,

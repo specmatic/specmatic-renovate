@@ -11,9 +11,9 @@ module.exports = {
     "!specmatic/order-service-avro",
   ],
   // throttle creation of new PRs
-  prHourlyLimit: 1,
+  prHourlyLimit: 3,
   // maximum number of open PRs at a time
-  prConcurrentLimit: 10,
+  prConcurrentLimit: 0,
   prCommitsPerRunLimit: 10,
   lockFileMaintenance: {
     enabled: true,
