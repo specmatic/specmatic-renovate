@@ -18,6 +18,7 @@ module.exports = {
   lockFileMaintenance: {
     enabled: true,
     automerge: true,
+    schedule: [ "at any time" ]
   },
   packageRules: [
     {
