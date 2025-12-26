@@ -22,7 +22,7 @@ module.exports = {
   },
   packageRules: [
     {
-      matchUpdateTypes: ["minor", "patch"],
+      matchUpdateTypes: ["minor", "patch", "lockFileMaintenance"],
       automerge: true,
     },
     {
