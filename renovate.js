@@ -41,6 +41,14 @@ module.exports = {
   ],
   packageRules: [
     {
+      groupName: "kotlin",
+      description: "Group updates for kotlin dependencies",
+      matchPackageNames: [
+        "org.jetbrains.kotlin.**:**",
+        "org.jetbrains.kotlin:**"
+      ]
+    },
+    {
       groupName: "apache-curator",
       description: "Group updates for Apache Curator dependencies",
       matchPackageNames: [
