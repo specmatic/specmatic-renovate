@@ -36,6 +36,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-renovate-samples-
 
+
+      - name: show renovate cache dir
+        run: tree .renovate-cache-samples
+
       - name: Run Renovate
         run: npm exec renovate
         env:
@@ -48,3 +52,7 @@ jobs:
           RENOVATE_CACHE_DIR: .renovate-cache-samples
           LOG_LEVEL: debug
           RENOVATE_ADDITIONAL_CONFIG_FILE: ./renovate.samples.js
+
+
+      - name: show renovate cache dir
+        run: tree .renovate-cache-samples
