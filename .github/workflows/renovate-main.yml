@@ -38,7 +38,7 @@ jobs:
             ${{ runner.os }}-renovate-main-
 
       - name: Run Renovate
-        run: npm exec renovate
+        run: ./run-in-parallel
         env:
           FORCE_COLOR: 3
           SPECMATIC_GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
