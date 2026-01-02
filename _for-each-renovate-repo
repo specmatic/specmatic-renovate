@@ -16,4 +16,4 @@ filter_non_forks() {
   done
 }
 
-jq -r '.[]' < "$TMPFILE" | filter_non_forks | xargs -P 5 -I {} bash -c "$@"
+jq -r '.[]' < "$TMPFILE" | filter_non_forks | xargs -P 8 -I {} bash -c "sleep $(shuf -i 10-40 -n 1); $@"
