@@ -86,6 +86,13 @@ module.exports = {
       ]
     },
     {
+      groupName: "netty",
+      description: "Group updates for netty",
+      matchPackageNames: [
+        "io.netty:**"
+      ]
+    },
+    {
       matchManagers: ["github-actions"],
       matchUpdateTypes: ["major", "minor", "patch"],
       automerge: true,
