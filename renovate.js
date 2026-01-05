@@ -93,6 +93,14 @@ module.exports = {
       ]
     },
     {
+      groupName: "jgit",
+      description: "Group updates for JGit dependencies",
+      matchPackageNames: [
+        "org.eclipse.jgit:*",
+        "org.eclipse.jgit"
+      ]
+    },
+    {
       matchManagers: ["github-actions"],
       matchUpdateTypes: ["major", "minor", "patch"],
       automerge: true,
