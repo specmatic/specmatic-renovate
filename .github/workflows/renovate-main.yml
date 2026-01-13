@@ -32,7 +32,9 @@ jobs:
       - name: Cache renovate cache
         uses: actions/cache@v5
         with:
-          path: .renovate-cache-main
+          path: |
+            .renovate-cache-main
+            .renovate-tmp-main
           key: ${{ runner.os }}-renovate-main-
           restore-keys: |
             ${{ runner.os }}-renovate-main-
@@ -46,6 +48,7 @@ jobs:
           SPECMATIC_REPOSILITE_TOKEN: ${{ secrets.SPECMATIC_REPOSILITE_TOKEN }}
           SPECMATIC_GITHUB_USER: ${{ vars.SPECMATIC_GITHUB_USER }}
           RENOVATE_CONFIG_FILE: ./renovate.js
+          RENOVATE_TMPDIR: .renovate-tmp-main
           RENOVATE_CACHE_DIR: .renovate-cache-main
           LOG_LEVEL: info
           RENOVATE_ADDITIONAL_CONFIG_FILE: ./renovate.main.js

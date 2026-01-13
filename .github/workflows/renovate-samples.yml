@@ -31,7 +31,9 @@ jobs:
       - name: Cache renovate cache
         uses: actions/cache@v5
         with:
-          path: .renovate-cache-samples
+          path: |
+            .renovate-cache-samples
+            .renovate-tmp-samples
           key: ${{ runner.os }}-renovate-samples-
           restore-keys: |
             ${{ runner.os }}-renovate-samples-
@@ -49,6 +51,7 @@ jobs:
           SPECMATIC_REPOSILITE_TOKEN: ${{ secrets.SPECMATIC_REPOSILITE_TOKEN }}
           SPECMATIC_GITHUB_USER: ${{ vars.SPECMATIC_GITHUB_USER }}
           RENOVATE_CONFIG_FILE: ./renovate.js
+          RENOVATE_TMPDIR: .renovate-tmp-samples
           RENOVATE_CACHE_DIR: .renovate-cache-samples
           LOG_LEVEL: debug
           RENOVATE_ADDITIONAL_CONFIG_FILE: ./renovate.samples.js
