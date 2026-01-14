@@ -38,6 +38,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-renovate-samples-
 
+      - name: Workaround for checkout v6
+        run: |
+          git config --unset-all http.https://github.com/.extraheader || true
+          git config set --local http.https://github.com/.extraheader "Authorization: basic $(/bin/echo -n x-access-token:${{ secrets.SPECMATIC_GITHUB_TOKEN }} | base64)"
+
       - name: Run Renovate
         run: ./run-in-parallel
         env:
