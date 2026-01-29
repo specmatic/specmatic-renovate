@@ -47,13 +47,7 @@ jobs:
 
       - name: Run Renovate
         run: |
-          mkdir -p .renovate-tmp-main
-          mkdir -p .renovate-cache-main
-          tree .renovate-tmp-main
-          tree .renovate-cache-main
           ./run-in-parallel
-          tree .renovate-tmp-main
-          tree .renovate-cache-main
         env:
           FORCE_COLOR: 3
           SPECMATIC_GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
