@@ -52,6 +52,8 @@ jobs:
           tree .renovate-tmp-main
           tree .renovate-cache-main
           ./run-in-parallel
+          tree .renovate-tmp-main
+          tree .renovate-cache-main
         env:
           FORCE_COLOR: 3
           SPECMATIC_GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
@@ -60,6 +62,7 @@ jobs:
           SPECMATIC_GITHUB_USER: ${{ vars.SPECMATIC_GITHUB_USER }}
           RENOVATE_CONFIG_FILE: ./renovate.js
           RENOVATE_TMPDIR: .renovate-tmp-main
+          TMPDIR: .renovate-tmp-main
           RENOVATE_CACHE_DIR: .renovate-cache-main
           LOG_LEVEL: info
           RENOVATE_ADDITIONAL_CONFIG_FILE: ./renovate.main.js
