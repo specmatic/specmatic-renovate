@@ -46,7 +46,12 @@ jobs:
           git config --unset-all http.https://github.com/.extraheader || true
 
       - name: Run Renovate
-        run: ./run-in-parallel
+        run: |
+          mkdir -p .renovate-tmp-main
+          mkdir -p .renovate-cache-main
+          tree .renovate-tmp-main
+          tree .renovate-cache-main
+          ./run-in-parallel
         env:
           FORCE_COLOR: 3
           SPECMATIC_GITHUB_TOKEN: ${{ secrets.SPECMATIC_GITHUB_TOKEN }}
