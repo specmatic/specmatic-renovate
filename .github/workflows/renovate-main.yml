@@ -64,5 +64,5 @@ jobs:
           RENOVATE_TMPDIR: .renovate-tmp-main
           TMPDIR: .renovate-tmp-main
           RENOVATE_CACHE_DIR: .renovate-cache-main
-          LOG_LEVEL: info
+          LOG_LEVEL: debug
           RENOVATE_ADDITIONAL_CONFIG_FILE: ./renovate.main.js
