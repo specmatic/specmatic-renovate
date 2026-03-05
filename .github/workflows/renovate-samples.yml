@@ -2,7 +2,7 @@ name: Run Renovate Bot - Samples
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # run every 4 hours
+    - cron: '0 0 * * *' # every midnight
   workflow_dispatch:
 
 jobs:
