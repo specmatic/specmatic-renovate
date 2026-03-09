@@ -7,6 +7,7 @@ module.exports = {
     "!specmatic/aws-lambda-kafka-with-localstack",
     "!specmatic/arazzo-paris-demo",
     "!specmatic/*iata*",
+    "!specmatic/labs",
     "!specmatic/tools.openapis.org",
     "!specmatic/specmatic.io",
   ],
