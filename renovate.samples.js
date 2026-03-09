@@ -7,6 +7,7 @@ module.exports = {
     "!specmatic/arazzo-paris-demo",
     "!specmatic/*iata*",
     "!specmatic/hooks-demo",
+    "!specmatic/labs",
     "!specmatic/specmatic-arazzo-ui-sample",
     "!specmatic/order-service-avro",
   ],
