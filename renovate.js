@@ -101,6 +101,13 @@ module.exports = {
       ]
     },
     {
+      groupName: "thymeleaf",
+      description: "Group updates for thymeleaf dependencies",
+      matchPackageNames: [
+        "org.thymeleaf:**",
+      ]
+    },
+    {
       matchManagers: ["github-actions"],
       matchUpdateTypes: ["major", "minor", "patch"],
       automerge: true,
