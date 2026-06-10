@@ -3,10 +3,13 @@ module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   autodiscoverFilter: [
     "specmatic/docs.specmatic.io",
+    "specmatic/priospot",
     "specmatic/specmatic-license",
     "specmatic/specmatic-html-reporter",
     "specmatic/specmatic-reporter",
     "specmatic/specamtic",
+    "specmatic/specamtic-node",
+    "specmatic/specamtic-python",
     "specmatic/enterprise",
     "specmatic/specmatic-insights",
   ],
