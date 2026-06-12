@@ -40,7 +40,9 @@ module.exports = {
         "net.javacrumbs.json-unit:json-unit-assertj",
         "com.squareup.okio:*",
         "commons-io:commons-io",
-        "org.apache.commons:*"
+        "org.apache.commons:*",
+        "org.apache.activemq:activemq*",
+        "org.apache.activemq:artemis*"
       ],
       matchUpdateTypes: [
         "minor",
