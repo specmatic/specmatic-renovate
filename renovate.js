@@ -112,5 +112,13 @@ module.exports = {
       matchUpdateTypes: ["major", "minor", "patch"],
       automerge: true,
     },
+    {
+      groupName: "activemq",
+      description: "Group updates for ActiveMq dependencies",
+      matchPackageNames: [
+        "org.apache.activemq:activemq*",
+        "org.apache.activemq:artemis*"
+      ]
+    }
   ]
 };
