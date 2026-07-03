@@ -6,6 +6,7 @@ module.exports = {
     "specmatic/priospot",
     "specmatic/specmatic-license",
     "specmatic/specmatic-html-reporter",
+    "specmatic/specmatic-gradle-plugin",
     "specmatic/specmatic-reporter",
     "specmatic/specmatic",
     "specmatic/specmatic-node",
