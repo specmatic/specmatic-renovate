@@ -3,7 +3,7 @@ module.exports = {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   // rebaseWhen: "behind-base-branch",
   autodiscoverFilter: [
-    "specmatic/*{-order-,-sample,-demo}*",
+    "specmatic/*{-order-,-sample,-demo,-inventory-api}*",
     "!specmatic/arazzo-paris-demo",
     "!specmatic/*iata*",
     "!specmatic/hooks-demo",
