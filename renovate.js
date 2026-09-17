@@ -34,7 +34,7 @@ module.exports = {
   hostRules: [
     {
       hostType: "maven",
-      matchHost: "repo.specmatic.io",
+      matchHost: "https://repo.specmatic.io/releases",
       username: process.env.SPECMATIC_REPOSILITE_USERNAME,
       password: process.env.SPECMATIC_REPOSILITE_TOKEN,
     },
