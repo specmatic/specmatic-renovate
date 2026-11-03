@@ -13,6 +13,7 @@ module.exports = {
     "specmatic/specmatic-python",
     "specmatic/enterprise",
     "specmatic/specmatic-insights",
+    "specmatic/specmatic-infra",
   ],
   prHourlyLimit: 2,
   prConcurrentLimit: 0,
