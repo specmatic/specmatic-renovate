@@ -35,8 +35,11 @@ module.exports = {
     {
       hostType: "maven",
       matchHost: "https://repo.specmatic.io/releases",
-      username: process.env.SPECMATIC_REPOSILITE_USERNAME,
-      password: process.env.SPECMATIC_REPOSILITE_TOKEN,
+    },
+    {
+      hostType: "maven",
+      matchHost: "https://repo.specmatic.io/snapshots",
+      enabled: false,
     },
   ],
   packageRules: [
