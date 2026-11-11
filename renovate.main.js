@@ -8,6 +8,7 @@ module.exports = {
     "specmatic/specmatic-html-reporter",
     "specmatic/specmatic-gradle-plugin",
     "specmatic/specmatic-reporter",
+    "specmatic/specmatic-renovate",
     "specmatic/specmatic",
     "specmatic/specmatic-node",
     "specmatic/specmatic-python",
